@@ -16,7 +16,9 @@ Ends the game when the player either guesses the word correctly or runs out of g
 Allows for a new game to start automatically after winning or losing.
 
 **Project Structure**
-package.json: This file contains project metadata and dependencies information. It's used for managing project dependencies and scripts.
+
+
+**package.json**: This file contains project metadata and dependencies information. It's used for managing project dependencies and scripts.
 {
   "name": "Guess Word App",
   "description": "First Angular App",
@@ -27,7 +29,7 @@ package.json: This file contains project metadata and dependencies information. 
 }
 
 
-bower.json: This file specifies project dependencies for the Bower package manager, including AngularJS.
+**bower.json**: This file specifies project dependencies for the Bower package manager, including AngularJS.
 {
   "name": "Guess Word App",
   "description": "First Angular App",
@@ -38,6 +40,8 @@ bower.json: This file specifies project dependencies for the Bower package manag
 }
 
 **How to Play**
+
+
 Open the web page.
 Start guessing letters by typing them into the input field.
 The game will inform you if the letter is correct or not.
@@ -51,6 +55,8 @@ Clone this repository.
 Open the index.html file in a web browser to play the game.
 
 **Customization**
+
+
 You can customize the list of words by modifying the words array in the JavaScript code (app.js). Simply replace the existing words with your own.
 var words=["Altassian","Remember","Mountain","Pokemon"];
 
