@@ -59,8 +59,9 @@ You can customize the list of words by modifying the words array in the JavaScri
 var words=["Altassian","Remember","Mountain","Pokemon"];
 
 
-Author
+**Author**
 
-Abdulla Farookh Khan
+
+**Abdulla Farookh Khan**
 
 Feel free to contribute to the project, report issues, or make improvements.
