@@ -60,6 +60,7 @@ var words=["Altassian","Remember","Mountain","Pokemon"];
 
 
 Author
+
 Abdulla Farookh Khan
 
 Feel free to contribute to the project, report issues, or make improvements.
