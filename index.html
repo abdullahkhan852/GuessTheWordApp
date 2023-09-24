@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html ng-app="HangmanApp" ng-controller="GameController">
+<head>
+
+	<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+
+  div {
+    margin: 10px;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .status {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .letters-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .letter-box {
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 5px;
+    border-radius: 5px;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+
+	<title>Guess The Word App</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>-->
+	<!--<script src="bower_components/angular/angular.js"></script>-->
+	<script src="app.js"></script>
+</head>
+<body  >
+	<div>
+		Guesses Left :: {{guesses}}
+	</div><br>
+	<div>
+		<div style="min-width: 40%">
+			Correct Letters :: <span ng-repeat="letter in correctLettersChosen">{{letter}}</span>
+		</div><br>
+
+		<div style="min-width: 40%">
+			Incorrect Letters :: <span ng-repeat="letter in incorrectLettersChosen">{{letter}}</span>
+		</div><br>
+	</div>
+	<div>{{displayWord}}</div>
+	<div>
+		<input type="text" name="guess" ng-model="input.letter" ng-minlength="1" ng-maxlength="1" ng-pattern="/^[A-Za-z]+$/">
+		<button ng-click="letterChosen()">SUBMIT</button>
+	</div>
+</body>
+</html>
