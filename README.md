@@ -1,7 +1,7 @@
 # GuessTheWordApp
-**Guess the Word Game**
+**Guess the Word App**
 
-This Guess the Word game is a simple web application built using HTML and AngularJS. It challenges players to guess a secret word by inputting individual letters. The game provides feedback on correct and incorrect guesses and keeps track of the remaining guesses.
+This Guess the Word App is a simple web application built using HTML , CSS and AngularJS. It challenges players to guess a secret word by inputting individual letters. The game provides feedback on correct and incorrect guesses and keeps track of the remaining guesses.
 
 
 **Features**
